@@ -66,6 +66,10 @@ for i in range(0, detections.shape[2]):
 			(0, 0, 255), 2)
 		cv2.putText(image, text, (startX, y),
 			cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 0, 255), 2)
+
+#Save the output image
+cv2.imwrite('outimage.jpeg', image)
+
 # show the output image
-cv2.imshow("Output", image)
-cv2.waitKey(0)
+#cv2.imshow("Output", image)
+#cv2.waitKey(0)
